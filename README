@@ -1,1 +1,6 @@
-This file was created by IntelliJ IDEA 12.0 for binding GitHub repository
+A simple stream processing framework for processing large set of transactions using Storm (http://storm-project.net/)
+Transaction Stream contains a tuple set which is 'Enriched', batched & aggregated to extract summary for a minute.
+Subsequently, the batch raw data is persisted into HBase as well as the summary is persisted.
+The advantage of using Storm, is the ability to quickly add any functionality by introducing newer 'bolts'.
+Storm makes the stream processing so simple by taking away the management of Queues and Worker Threads.
+TODO: Peristence to HBase Stateful processing using Trident
